@@ -9,12 +9,6 @@ import static org.junit.Assert.assertEquals;
  * @author Yeam Anan (<yeamanan@gmail.com>)
  */
 public class SampleTest {
-
-    @Before
-    public void setUp() {
-        Sample = new Sample();
-    }
-    
     /**
      * test() test method.
      */
