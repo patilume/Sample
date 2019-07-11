@@ -1,7 +1,8 @@
 package com.yeamanan.sample;
-
+import org.junit.Assert;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+
 
 /**
  * SampleTest class.
