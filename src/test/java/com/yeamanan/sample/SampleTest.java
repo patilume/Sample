@@ -10,11 +10,12 @@ import static org.junit.Assert.assertEquals;
     /**
      * JUnit set up method.
      */
+/*
     @Before
     public final void setUp() {
         smpl = new Sample();
     }
-
+*/
 
 
 /**
