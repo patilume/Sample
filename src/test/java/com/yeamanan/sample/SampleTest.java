@@ -10,6 +10,11 @@ import static org.junit.Assert.assertEquals;
  */
 public class SampleTest {
 
+    @Before
+    public void setUp() {
+        Sample = new Sample();
+    }
+    
     /**
      * test() test method.
      */
