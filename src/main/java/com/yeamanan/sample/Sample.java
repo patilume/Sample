@@ -1,4 +1,4 @@
-package java.com.yeamanan.sample;
+package com.yeamanan.sample;
 
 import org.apache.log4j.Logger;
 
@@ -28,8 +28,8 @@ public class Sample {
      *
      * @return some text
      */
-    //public static String write() {
-    public String write() {
+    public static String write() {
+    //public String write() {
         return "This is a sample project";
     }
 }
