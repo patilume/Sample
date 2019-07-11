@@ -28,7 +28,8 @@ public class Sample {
      *
      * @return some text
      */
-    public static String write() {
+    //public static String write() {
+    public String write() {
         return "This is a sample project";
     }
 }
