@@ -9,12 +9,13 @@ import static org.junit.Assert.assertEquals;
  * @author Yeam Anan (<yeamanan@gmail.com>)
  */
 public class SampleTest {
+   
     /**
      * test() test method.
      */
     @Test
     public final void test() {
-        Assert.assertEquals("This is ok", Sample.write(), "This is a sample project");
+        assertEquals("This is ok", Sample.write(), "This is a sample project");
         //assertEquals(new Sample.write(), "This is a sample project");
     }
 }
