@@ -15,7 +15,6 @@ public class SampleTest {
      */
     @Test
     public final void test() {
-        sample = new Sample();
         assertEquals("This is ok", sample.write(), "This is a sample project");
     }
 }
