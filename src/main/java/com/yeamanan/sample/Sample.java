@@ -1,4 +1,4 @@
-package com.yeamanan.sample;
+package java.com.yeamanan.sample;
 
 import org.apache.log4j.Logger;
 
