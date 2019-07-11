@@ -1,6 +1,5 @@
 package com.yeamanan.sample;
-import org.junit.Test;
-import org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 /**
