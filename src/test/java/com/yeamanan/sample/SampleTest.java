@@ -1,4 +1,4 @@
-package java.com.yeamanan.sample;
+package com.yeamanan.sample;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
