@@ -1,4 +1,4 @@
-import com.yeamanan.sample.*;
+package com.yeamanan.sample;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
@@ -14,7 +14,7 @@ public class SampleTest {
      */
     @Test
     public final void test() {
-        //assertEquals("This is ok", new Sample.write(), "This is a sample project");
-        assertEquals(new Sample.write(), "This is a sample project");
+        Assert.assertEquals("This is ok", Sample.write(), "This is a sample project");
+        //assertEquals(new Sample.write(), "This is a sample project");
     }
 }
