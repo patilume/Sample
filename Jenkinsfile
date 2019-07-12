@@ -63,5 +63,13 @@ pipeline{
 			}
 		}
 		
+		stage('Deploy - Deploy to WildFly'){
+			steps{
+				sshagent(['tomcat-deploy']) {
+				sh 'scp -o StrictHostKeyChecking=no webapp/target/*.war ec2-user@13.232.243.118:/opt/wildfly/standalone/deployments/'
+				}
+			}
+		}
+		
 	}
 }
