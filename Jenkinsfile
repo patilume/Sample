@@ -15,5 +15,12 @@ pipeline{
 			}
 		}
 		
+		stage('Initialize - Initialize work dirs'){
+			steps{
+				withAnt(installation: 'ant', jdk: 'jdk') {
+				sh 'ant init'
+				}
+			}
+		}
 	}
 }
