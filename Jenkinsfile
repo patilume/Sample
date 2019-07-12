@@ -47,5 +47,13 @@ pipeline{
 			}
 		}
 		
+		stage('Archive the application'){
+			steps{
+				withAnt(installation: 'ant', jdk: 'jdk') {
+				sh 'ant war'
+				}
+			}
+		}
+		
 	}
 }
