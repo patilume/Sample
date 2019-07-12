@@ -74,6 +74,17 @@
         </jar>
     </target>
     <!-- -->
+    
+        <!-- Archive the application -->
+    <target name="war" depends="build">
+        <jar destfile="${war.dir}/${ant.project.name}.war" basedir="${classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="${main-class}"/>
+            </manifest>
+        </jar>
+    </target>
+    <!-- -->
+    
 
     <!-- Run the application -->
     <target name="run" depends="jar">
