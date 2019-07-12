@@ -1,6 +1,7 @@
 package com.yeamanan.sample;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import Sample.src.main.java.com.yeamanan.sample.*
 
 /**
      * Holds an instance of the class we are testing.
