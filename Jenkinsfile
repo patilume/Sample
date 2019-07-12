@@ -6,5 +6,14 @@ pipeline{
           	git 'https://github.com/patilume/Ant-WebProject.git'
 				}
 			}
+			
+		stage('Initialize - Clean work dirs'){
+			steps{
+				withAnt(installation: 'ant', jdk: 'jdk') {
+				sh 'ant clean'
+				}
+			}
 		}
+		
 	}
+}
