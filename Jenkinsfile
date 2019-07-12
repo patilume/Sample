@@ -31,6 +31,14 @@ pipeline{
 			}
 		}
 		
+		stage('Resolve dependencies'){
+			steps{
+				withAnt(installation: 'ant', jdk: 'jdk') {
+				sh 'ant resolve'
+				}
+			}
+		}
+		
 		stage('Compile'){
 			steps{
 				withAnt(installation: 'ant', jdk: 'jdk') {
