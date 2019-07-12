@@ -97,7 +97,7 @@
 
     <!-- Compile the test's sources -->
     <target name="build-test" depends="resources-test">
-        <javac srcdir="${src.test.dir}" destdir="${test.dir}" includeantruntime="false">
+        <javac srcdir="${src.test.dir}" destdir="${test.dir}" includeantruntime="true">
             <classpath>
                 <path refid="classpath"/>
                 <path refid="application"/>
