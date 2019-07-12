@@ -15,7 +15,7 @@ pipeline{
 			}
 		}
 		
-		stage('Initialize - Initialize work dirs'){
+		stage('Initialize - Create work dirs'){
 			steps{
 				withAnt(installation: 'ant', jdk: 'jdk') {
 				sh 'ant init'
@@ -23,12 +23,21 @@ pipeline{
 			}
 		}
 		
-		stage('Copy the main resources in the classes build folder'){
+		stage('Initialize - Copy resources in the build folder'){
 			steps{
 				withAnt(installation: 'ant', jdk: 'jdk') {
 				sh 'ant resources'
 				}
 			}
 		}
+		
+		stage('Compile'){
+			steps{
+				withAnt(installation: 'ant', jdk: 'jdk') {
+				sh 'ant build'
+				}
+			}
+		}
+		
 	}
 }
