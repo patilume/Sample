@@ -47,6 +47,14 @@ pipeline{
 			}
 		}
 		
+		stage('Run JUnit test'){
+			steps{
+				withAnt(installation: 'ant', jdk: 'jdk') {
+				sh 'ant test'
+				}
+			}
+		}
+		
 		stage('Archive the application'){
 			steps{
 				withAnt(installation: 'ant', jdk: 'jdk') {
