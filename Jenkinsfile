@@ -10,7 +10,7 @@ pipeline{
 		stage('Initialize - Clean work dirs'){
 			steps{
 				withAnt(installation: 'ant', jdk: 'jdk') {
-				sh 'ant clean'
+				sh 'ant init'
 				}
 			}
 		}
