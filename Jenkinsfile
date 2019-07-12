@@ -22,5 +22,13 @@ pipeline{
 				}
 			}
 		}
+		
+		stage('Copy the main resources in the classes build folder'){
+			steps{
+				withAnt(installation: 'ant', jdk: 'jdk') {
+				sh 'ant resources'
+				}
+			}
+		}
 	}
 }
