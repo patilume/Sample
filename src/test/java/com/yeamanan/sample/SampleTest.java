@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 /**
      * Holds an instance of the class we are testing.
      */
-    private Sample smpl;
+    //private Sample smpl;
 
     /**
      * JUnit set up method.
